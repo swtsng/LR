@@ -1,0 +1,98 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #e8efff, #f5f7ff);
+    color: #222;
+}
+
+.container {
+    width: 100%;
+    max-width: 420px;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 15px 45px rgba(60, 90, 160, 0.12);
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #202944;
+}
+
+#registerForm {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+input {
+    width: 100%;
+    height: 52px;
+    padding: 0 16px;
+    border: 1px solid #dce2ee;
+    border-radius: 10px;
+    background: #f9faff;
+    font-size: 15px;
+    outline: none;
+    transition: 0.2s;
+}
+
+input::placeholder {
+    color: #929bb0;
+}
+
+input:focus {
+    border-color: #5578ed;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(85, 120, 237, 0.12);
+}
+
+button {
+    width: 100%;
+    height: 52px;
+    border: none;
+    border-radius: 10px;
+    background: #5578ed;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #4164d8;
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+#message {
+    min-height: 20px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #e05252;
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 20px;
+        padding: 30px 24px;
+    }
+}
